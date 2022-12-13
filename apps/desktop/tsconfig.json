@@ -1,20 +1,17 @@
 {
+  "extends": "tsconfig-config-application/electron.json",
   "compilerOptions": {
-    "target": "ES6",
-    "allowJs": false,
     "jsx": "react-jsx",
     "module": "commonjs",
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "noImplicitAny": true,
     "sourceMap": true,
-    "baseUrl": ".",
     "outDir": "dist",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
+    "baseUrl": ".",
     "paths": {
-      "*": ["node_modules/*"]
-    }
+      "@application/*": [
+        "src/application/*"
+      ]
+    },
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }
