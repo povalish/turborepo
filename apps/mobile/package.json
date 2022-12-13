@@ -12,7 +12,8 @@
   "dependencies": {
     "react": "18.1.0",
     "react-native": "0.70.6",
-    "react-native-monorepo-tools": "^1.2.1"
+    "react-native-monorepo-tools": "^1.2.1",
+    "ui-kit": "*"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

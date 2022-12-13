@@ -1,0 +1,5 @@
+{
+  "extends": "tsconfig-config-application/ui-kit.json",
+  "include": ["."],
+  "exclude": ["dist", "build", "node_modules"]
+}

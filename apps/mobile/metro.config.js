@@ -1,3 +1,5 @@
+/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable @typescript-eslint/no-var-requires */
 /**
  * Metro configuration for React Native
  * https://github.com/facebook/react-native
@@ -5,7 +7,10 @@
  * @format
  */
 const exclusionList = require('metro-config/src/defaults/exclusionList');
-const { getMetroTools, getMetroAndroidAssetsResolutionFix } = require('react-native-monorepo-tools');
+const {
+  getMetroTools,
+  getMetroAndroidAssetsResolutionFix,
+} = require('react-native-monorepo-tools');
 
 const monorepoMetroTools = getMetroTools();
 const androidAssetsResolutionFix = getMetroAndroidAssetsResolutionFix();
@@ -23,9 +28,8 @@ module.exports = {
 
   server: {
     // Server middleware
-    enhanceMiddleware: (middleware) => {
-      return androidAssetsResolutionFix.applyMiddleware(middleware);
-    },
+    enhanceMiddleware: (middleware) => androidAssetsResolutionFix.applyMiddleware(middleware),
+    port: 3060,
   },
 
   // Add additional Yarn workspace package roots to the module map.

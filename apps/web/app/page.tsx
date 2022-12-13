@@ -1,11 +1,15 @@
 import Image from 'next/image';
 import styles from './page.module.css';
+import { Button } from 'ui-kit';
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
         <h1 className={styles.title}>Hello from Turbo!</h1>
+        <Button type='button' className={styles.title}>
+          Button!
+        </Button>
       </main>
 
       <footer className={styles.footer}>
