@@ -1,14 +1,13 @@
-import { SafeAreaView, Text } from 'react-native';
-import { Button } from 'ui-kit';
+import { View } from 'react-native';
+import { Main } from './src/Main';
 
 // App
 //
 
 const App = () => (
-  <SafeAreaView>
-    <Text>Hello from ReactNative!</Text>
-    <Button title='Click me!' />
-  </SafeAreaView>
+  <View style={{ flex: 1 }}>
+    <Main />
+  </View>
 );
 
 export default App;

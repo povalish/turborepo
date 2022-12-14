@@ -15,8 +15,8 @@ const config: ForgeConfig = {
   plugins: [
     new WebpackPlugin({
       mainConfig,
-      port: 3030,
-      loggerPort: 9030,
+      port: 3010,
+      loggerPort: 3011,
       renderer: {
         config: rendererConfig,
         entryPoints: [

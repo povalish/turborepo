@@ -29,7 +29,6 @@ module.exports = {
   server: {
     // Server middleware
     enhanceMiddleware: (middleware) => androidAssetsResolutionFix.applyMiddleware(middleware),
-    port: 3060,
   },
 
   // Add additional Yarn workspace package roots to the module map.

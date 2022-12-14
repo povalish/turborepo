@@ -1,8 +1,13 @@
 import React from 'react';
+import { Button } from 'ui-kit';
+import styles from './App.module.css';
+
+// App
+//
 
 export const App: React.FC = () => (
-  <div>
-    <h1>💖 Hello World!</h1>
-    <p>Welcome to your Electron application.</p>
+  <div className={styles.main}>
+    <h1 className={styles.title}>Hello from Electron!</h1>
+    <Button className={styles.title}>Click me!</Button>
   </div>
 );
