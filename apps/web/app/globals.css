@@ -1,4 +1,12 @@
-html, body {
-  margin: 0;
-  padding: 0;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.fix-next-fragments [data-nextjs-scroll-focus-boundary] {
+  @apply flex flex-col flex-grow;
+}
+
+svg {
+  height: auto;
 }
