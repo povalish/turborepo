@@ -5,11 +5,13 @@
   "description": "My Electron application description",
   "main": ".webpack/main",
   "scripts": {
-    "dev": "electron-forge start",
+    "dev": "concurrently \"electron-forge start\" \"npm run tailwind -- --watch\"",
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "eslint --ext .ts,.tsx ."
+    "lint": "eslint --ext .ts,.tsx .",
+
+    "tailwind": "tailwindcss -i src/application/tailwind.css -o src/application/tailwind.compiled.css"
   },
   "license": "MIT",
   "dependencies": {
@@ -30,16 +32,19 @@
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
     "@vercel/webpack-asset-relocator-loader": "1.7.3",
-    "eslint": "7.32.0",
-    "eslint-config-application": "*",
-    "tsconfig-config-application": "*",
+    "autoprefixer": "^10.4.13",
     "css-loader": "^6.0.0",
     "electron": "22.0.0",
+    "eslint": "7.32.0",
+    "eslint-config-application": "*",
     "fork-ts-checker-webpack-plugin": "^7.2.13",
     "node-loader": "^2.0.0",
+    "postcss": "^8.4.20",
     "style-loader": "^3.0.0",
+    "tailwindcss": "^3.2.4",
     "ts-loader": "^9.2.2",
     "ts-node": "^10.0.0",
+    "tsconfig-config-application": "*",
     "typescript": "~4.5.4"
   }
 }

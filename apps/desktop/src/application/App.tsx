@@ -1,13 +1,14 @@
 import React from 'react';
-import { Button } from 'ui-kit';
-import styles from './App.module.css';
+
+import './tailwind.compiled.css';
+import { Button, Layout } from 'ui-kit/components';
 
 // App
 //
 
 export const App: React.FC = () => (
-  <div className={styles.main}>
-    <h1 className={styles.title}>Hello from Electron!</h1>
-    <Button className={styles.title}>Click me!</Button>
-  </div>
+  <Layout>
+    <h1 className='text-3xl font-bold uppercase mb-3'>Hello from Desktop!</h1>
+    <Button type='button'>Вход</Button>
+  </Layout>
 );
