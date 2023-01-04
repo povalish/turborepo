@@ -4,13 +4,14 @@
   "private": true,
   "workspaces": {
     "packages": ["apps/*", "packages/*"],
-    "nohoist": ["**/react-native",  "**/react-native/**"]
+    "nohoist": ["**/react-native",  "**/react-native/**", "**/nativewind/**", "**/nativewind"]
   },
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "clean-repo": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +"
   },
   "devDependencies": {
     "eslint-config-application": "*",

@@ -10,6 +10,7 @@
   "dependencies": {
     "@types/react-native": "^0.70.8",
     "class-variance-authority": "^0.4.0",
+    "nativewind": "^2.0.11",
     "react": "18.2.0",
     "react-native": "^0.70.6"
   },
