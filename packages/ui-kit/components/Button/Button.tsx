@@ -1,5 +1,5 @@
 import React, { ButtonHTMLAttributes } from 'react';
-import { styles } from './Button.styles';
+import { classes } from './Button.classes';
 
 // Button
 //
@@ -9,7 +9,7 @@ interface IButton extends ButtonHTMLAttributes<HTMLButtonElement> {}
 export const Button: React.FC<IButton> = ({ children, className, ...buttonProps }) => (
   // Button type has come from props
   // eslint-disable-next-line react/button-has-type
-  <button className={styles({ className })} {...buttonProps}>
+  <button className={classes({ className })} {...buttonProps}>
     {children}
   </button>
 );

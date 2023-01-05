@@ -1,4 +1,4 @@
-import './globals.css';
+import './tailwind.compiled.css';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

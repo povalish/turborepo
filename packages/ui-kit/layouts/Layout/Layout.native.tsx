@@ -1,7 +1,10 @@
 import React from 'react';
-import { ViewProps } from 'react-native';
-import { StyledProps } from 'nativewind';
-import { LayoutView } from './Layout.style';
+import { View, type ViewProps, Text } from 'react-native';
+import { styled, StyledProps } from 'nativewind';
+import { containerClasses, textClasses } from './Layout.classes';
+
+export const LayoutView = styled(View, containerClasses());
+export const LayoutText = styled(Text, textClasses());
 
 // Layout
 //

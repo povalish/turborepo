@@ -1,5 +1,10 @@
 import React, { ComponentProps, PropsWithChildren } from 'react';
-import { ButtonView, ButtonText, styles, textStyles } from './Button.styles';
+import { styled } from 'nativewind';
+import { TouchableOpacity, Text } from 'react-native';
+import { buttonClasses, textClasses } from './Button.classes';
+
+export const ButtonView = styled(TouchableOpacity, buttonClasses());
+export const ButtonText = styled(Text, textClasses());
 
 // Button.native
 //
@@ -9,7 +14,7 @@ interface IButton extends PropsWithChildren, ComponentProps<typeof ButtonView> {
 }
 
 export const Button: React.FC<IButton> = ({ children, className, textClassName, ...props }) => (
-  <ButtonView activeOpacity={0.8} className={styles({ className })} {...props}>
-    <ButtonText className={textStyles({ className: textClassName })}>{children}</ButtonText>
+  <ButtonView activeOpacity={0.8} className={buttonClasses({ className })} {...props}>
+    <ButtonText className={textClasses({ className: textClassName })}>{children}</ButtonText>
   </ButtonView>
 );

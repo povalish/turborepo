@@ -1,9 +1,9 @@
 import React, { PropsWithChildren } from 'react';
-import { styles } from './Layout.style';
+import { classes } from './Layout.classes';
 
 // Layout
 //
 
 export const Layout: React.FC<PropsWithChildren> = ({ children }) => (
-  <div className={styles()}>{children}</div>
+  <div className={classes()}>{children}</div>
 );

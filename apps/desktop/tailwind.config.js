@@ -2,6 +2,7 @@
 module.exports = {
   content: [
     '../../packages/ui-kit/components/**/*.{js,ts,jsx,tsx}',
+    '../../packages/ui-kit/layouts/**/*.{js,ts,jsx,tsx}',
     './src/templates/**/*.{js,ts,jsx,tsx}',
     './src/application/**/*.{js,ts,jsx,tsx}',
   ],

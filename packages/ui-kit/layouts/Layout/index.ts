@@ -1,2 +1,2 @@
 export * from './Layout';
-export * from './Layout.style';
+export * from './Layout.classes';

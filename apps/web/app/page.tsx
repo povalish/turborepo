@@ -1,4 +1,5 @@
-import { Button, Layout } from 'ui-kit/components';
+import { Button } from 'ui-kit/components/Button';
+import { Layout, textClasses } from 'ui-kit/layouts/Layout';
 
 // page
 //
@@ -6,8 +7,8 @@ import { Button, Layout } from 'ui-kit/components';
 export default function Home() {
   return (
     <Layout>
-      <h1 className='text-3xl font-bold uppercase mb-3'>Hello from NextJS!</h1>
-      <Button type='button'>Вход</Button>
+      <h1 className={textClasses({ className: 'mb-2' })}>Hello from NextJS!</h1>
+      <Button type='button'>Lets go!</Button>
     </Layout>
   );
 }
