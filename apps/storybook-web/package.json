@@ -1,14 +1,13 @@
 {
-  "name": "web-storybook",
+  "name": "storybook-web",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"next dev -p 3080\" \"npm run tailwind -- --watch\"",
+    "dev": "concurrently \"yarn:watch:*\"",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "tailwind": "tailwindcss -i .storybook/src/tailwind.css -o .storybook/public/tailwind.compiled.css",
-    "storybook": "concurrently \"yarn:watch:*\"",
     "build-storybook": "concurrently \"yarn:build:*\"",
     "build:css": "yarn tailwind",
     "build:storybook": "build-storybook",
