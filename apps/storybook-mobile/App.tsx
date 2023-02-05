@@ -1,5 +1,6 @@
 import { Layout, LayoutText } from 'ui-kit/layouts/Layout/Layout.native';
 import { Button } from 'ui-kit/components/Button/Button.native';
+import StorybookUIRoot from './storybook';
 
 // App
 //
@@ -11,4 +12,4 @@ const App = () => (
   </Layout>
 );
 
-export default App;
+export default StorybookUIRoot;
