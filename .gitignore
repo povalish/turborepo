@@ -5,6 +5,7 @@ node_modules
 .pnp
 .pnp.js
 
+
 # testing
 coverage
 
@@ -12,6 +13,9 @@ coverage
 .next/
 out/
 build
+
+# styles
+tailwind.compiled.css
 
 # misc
 .DS_Store
