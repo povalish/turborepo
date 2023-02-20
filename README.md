@@ -37,3 +37,9 @@ $ yarn dev --filter storybook-mobile # run storybook for ReactNative app
 - NextJS 13 (for web apps)
 - Electron (for desktop apps)
 - ReactNative (for mobile apps)
+
+
+----
+
+### TODO: Folder sturcture descrption
+### TODO: Add readme files for each app/package and links
