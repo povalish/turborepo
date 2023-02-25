@@ -3,10 +3,14 @@
   "compilerOptions": {
     "allowJs": true,
     "plugins": [
-      {
-        "name": "next"
-      }
-    ]
+      { "name": "next" }
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@modules/*": ["./src/modules?*"],
+      "@app/*": [ "./app/*"],
+      "@testing/*": ["./src/testing"]
+    }
   },
   "include": [
     "next-env.d.ts",
