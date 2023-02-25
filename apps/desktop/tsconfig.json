@@ -10,7 +10,7 @@
       "@application/*": [
         "src/application/*"
       ]
-    },
+    }
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]

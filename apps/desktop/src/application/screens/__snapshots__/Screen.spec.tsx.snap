@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Screen component renders component unchanged 1`] = `
+<div>
+  <div
+    class="
+  w-screen h-screen 
+  bg-[#6FD0F3]
+  flex flex-col items-center justify-center
+  px-4
+ 
+  text-[#333E53] text-3xl text-center
+  font-bold
+"
+  >
+    <h1
+      class="
+  text-[#333E53] text-3xl text-center
+  font-bold
+ mb-2"
+    >
+      Hello from Electron!
+    </h1>
+    <button
+      class="
+  min-w-[160px] py-1.5 px-2 rounded-lg
+  bg-[#FCB07E] border-[#FCB07E] border-2
+ 
+  text-[#333E53] text-xl text-center
+  font-bold
+"
+      type="button"
+    >
+      Lets go!
+    </button>
+  </div>
+</div>
+`;
