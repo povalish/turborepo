@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ui components > Layout renders component unchanged 1`] = `
+<div>
+  <div
+    class="
+  w-screen h-screen 
+  bg-[#6FD0F3]
+  flex flex-col items-center justify-center
+  px-4
+ 
+  text-[#333E53] text-3xl text-center
+  font-bold
+"
+  >
+    Sample Text
+  </div>
+</div>
+`;

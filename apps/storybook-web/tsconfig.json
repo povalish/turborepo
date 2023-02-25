@@ -2,11 +2,12 @@
   "extends": "tsconfig-config-application/nextjs.json",
   "compilerOptions": {
     "allowJs": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ]
+    "plugins": [{ "name": "next" }],
+    "baseUrl": ".",
+    "paths": {
+      "@tests-setup/*": ["./tests-setup/*"],
+      "@tests/*": [ "./tests/*"]
+    }
   },
   "include": [
     "next-env.d.ts",
